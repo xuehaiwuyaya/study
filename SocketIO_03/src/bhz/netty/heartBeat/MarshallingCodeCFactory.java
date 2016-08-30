@@ -1,4 +1,4 @@
-/*  1:   */ package bhz.netty.runtime;
+/*  1:   */ package bhz.netty.heartBeat;
 /*  2:   */ 
 /*  3:   */ import io.netty.handler.codec.marshalling.DefaultMarshallerProvider;
 /*  4:   */ import io.netty.handler.codec.marshalling.DefaultUnmarshallerProvider;
@@ -21,7 +21,7 @@
 /* 21:   */     
 /* 22:32 */     UnmarshallerProvider provider = new DefaultUnmarshallerProvider(marshallerFactory, configuration);
 /* 23:   */     
-/* 24:34 */     MarshallingDecoder decoder = new MarshallingDecoder(provider, 1024);
+/* 24:34 */     MarshallingDecoder decoder = new MarshallingDecoder(provider, 1048576);
 /* 25:35 */     return decoder;
 /* 26:   */   }
 /* 27:   */   
@@ -39,6 +39,6 @@
 
 
 /* Location:           E:\BaiduYunDownload\尚学堂架构师\008-互联网架构视频第二期(011)\SocketIO_03\bin\
- * Qualified Name:     bhz.netty.runtime.MarshallingCodeCFactory
+ * Qualified Name:     bhz.netty.heartBeat.MarshallingCodeCFactory
  * JD-Core Version:    0.7.0.1
  */
