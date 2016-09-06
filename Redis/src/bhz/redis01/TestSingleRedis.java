@@ -20,8 +20,9 @@ import redis.clients.jedis.ShardedJedisPool;
 import redis.clients.jedis.Transaction;
  
 public class TestSingleRedis {
- 
+	//1 单独连接一台redis服务器
     private static Jedis jedis;
+	//2 主从， 哨兵 使用shard
     private static ShardedJedis shard;
     private static ShardedJedisPool pool;
  
