@@ -25,6 +25,7 @@ public class TestClusterRedis {
 	    cfg.setMaxIdle(20);
 	    cfg.setMaxWaitMillis(-1);
 	    cfg.setTestOnBorrow(true); 
+		//参数意义：集群配置    timeout  重新连接次数   连接池配置
 	    JedisCluster jc = new JedisCluster(jedisClusterNode,6000,1000,cfg);	    
 	    
 	    System.out.println(jc.set("age","20"));
